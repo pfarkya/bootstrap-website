@@ -5,9 +5,10 @@ My Custom CSS
 
 Author:  Prashant Farkya
 Updated: July 2016
-Notes:	 Hand coded for Udemy.com
+Notes:	 Hand coded for Assignment-2
 
 */
+
 
 
 /* --------------------------------------
@@ -24,23 +25,30 @@ Notes:	 Hand coded for Udemy.com
    Typography
    -------------------------------------- */
 #myCarousel .carousel-caption{
-	color:blue;
+	color:white;
+}
+#myCarousel .carousel-caption a{
+	font-size: 18px;
+    font-weight: bold;
 }
 
-
-
 /* --------------------------------------
-   Navbar
+   tab-pane
    -------------------------------------- */
-  
+ .tab-pane h4{
+ 	font-size:22px;
+ }
+.tab-pane p{
+	font-size:16px;
+}
+
 /* --------------------------------------
    Carousel
    -------------------------------------- */
-#myCarousel {
-	margin-top: 60px;
-}
+
 
 .carousel-caption {
+	background-color:rgba(0, 0, 0, 0.5);
 	font-size: 24px;
 }
 
@@ -65,7 +73,18 @@ Notes:	 Hand coded for Udemy.com
 /* --------------------------------------
    Global Styles
    -------------------------------------- */
+body{
+	margin-top:60px;
+	background:url(../../images/background.jpeg) no-repeat fixed;
+	background-size:100% 100%;
+	color:black;
+	text-shadow:1px 1px 20px white;
+	font-family:sans-serif;
+}
 
+.page-header{
+	margin-top:10px;
+}
 .subsec{
 	height:50%;
 	border-left:1px black solid;
@@ -78,14 +97,75 @@ Notes:	 Hand coded for Udemy.com
 }
 
 #facility .facility img{
-	height:238px;
-	width:100%;
-	margin-bottom:20px;
-	margin-top:20px;
+	border: 1px solid;
+	margin:20px auto 20px auto;
 }
 #facility .facility .panel-title{
 	font-weight:bold;
 }
+
+.photo-buck{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.photo-buck img{
+	margin:auto;
+}
+/**************************************************
+Thumbnail Price Tag Styling
+****************************************************/
+.thumbnails {
+	margin: 20px 0;
+}
+
+.thumbnail {
+	position: relative;
+}
+
+.thumbnail h3 {
+	font-size: 16px;
+	margin: 0 0 10px;
+	line-height: 20px;
+}
+
+.thumbnail .price {
+	font-size: 22px;
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	padding: 10px;
+}
+
+.thumbnail .price sup {
+	font-weight: normal;
+	font-size: 12px;
+}
+
+.thumbnail span.glyphicon {
+	margin-right: 5px;
+}
+
+
+/**************************************************
+Footer
+****************************************************/
+footer{
+	background:#f8f8f8;
+	border-top:1px #e7e7e7 solid;
+}
+footer .unstyled,footer h4{
+	display:inline-block;
+	padding:0px;
+	margin:10px 0px 10px 0px;
+}
+footer .unstyled li{
+   display:inline;
+   list-style:none;
+   margin-right: 10px;
+}
+
+
 /* --------------------------------------
    Media Queries
    -------------------------------------- */
