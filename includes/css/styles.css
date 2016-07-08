@@ -14,11 +14,46 @@ Notes:	 Hand coded for Assignment-2
 /* --------------------------------------
    Layout
    -------------------------------------- */
+.video-thumbnail {
+    position: relative;
+}
+.video-thumbnail .glyphicon {
+    position: absolute;
+    top: 50%;
+    margin-top: -30px; /* half icon's height */
+    left: 50%;
+    margin-left: -30px; /* half icon's width */
+    z-index: 999;
+    font-size:60px;
+}
+
+.modal-content iframe{
+	margin:0 auto;
+	width:100%;
+}
+.navbar{
+	min-height:30px;
+}
+.navbar.navbar-default.navbar-fixed-top.shrink.tiny{
+	height:37px;
+}
 .navbar-brand{
 	padding:10px;
 }
 .navbar-brand img{
 	height:30px;
+}
+.nav.navbar-nav>li>a.tiny{
+	padding-top:8px;
+	padding-bottom:8px;
+}
+.navbar-brand.tiny{
+	padding-top:3px;
+	padding-bottom:3px;
+}
+.navbar-form.tiny{
+	margin-top:1px;
+	margin-bottom:1px;
 }
 
 /* --------------------------------------
@@ -32,14 +67,29 @@ Notes:	 Hand coded for Assignment-2
     font-weight: bold;
 }
 
+#myCarousel .carlink{
+	color:chartreuse;
+}
+
+
 /* --------------------------------------
    tab-pane
    -------------------------------------- */
  .tab-pane h4{
  	font-size:22px;
+ 	margin-top:0px;
+ 	padding-top:10px;
  }
 .tab-pane p{
 	font-size:16px;
+}
+
+.tab-content{
+	border-left:1px solid #ddd;
+	border-right:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+	padding-left:10px;
+	padding-right:10px;
 }
 
 /* --------------------------------------
@@ -176,7 +226,7 @@ footer .unstyled li{
 		padding-left:5px;
 	}
 	#searchInput{
-		width:100px;
+		width:150px;
 	}
 }
 

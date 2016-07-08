@@ -23,7 +23,7 @@
 	</head>
 	<body>
 	<div class="container" id="main">
-		<div class="navbar navbar-default navbar-fixed-top">
+		<div class="navbar navbar-default navbar-fixed-top shrink">
 			<div class="container">
 			    <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
                 <div class="navbar-header">
@@ -33,13 +33,13 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="images/logo2.png" alt="Your Logo"></a>
+                    <a class="navbar-brand shrink" href="index.html"><img src="images/logo2.png" alt="Your Logo"></a>
                   
                 </div><!-- navbar header-->
                 <div id="navbarcollapsing" class="collapse navbar-collapse">
                 	<ul class="nav navbar-nav">
-                		<li><a href="index.html">Home</a></li>
-                		<li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Courses<strong class="caret"></strong></a>
+                		<li  class="active"><a class="shrink" href="index.html">Home</a></li>
+                		<li class="dropdown"><a class="dropdown-toggle shrink" href="#" data-toggle="dropdown">Courses<strong class="caret"></strong></a>
                 		  <ul class="dropdown-menu">
                 		  	<li><a href="courses.html#math">Mathematics</a></li>
                 		  	<li><a href="courses.html#chemistry">Chemistry</a></li>
@@ -49,19 +49,23 @@
                 		  	<li><a href="courses.html#bio">Biology</a></li>
                 		  </ul>
                 		</li>
-                		<li class="active"><a href="gallery.html">Photo Gallery</a></li>
-                		<li><a href="contactus.html">Contact Us</a></li>
+                		<li><a class="shrink" href="gallery.html">Gallery</a></li>
+                		<li><a class="shrink" href="contactus.html">Contact Us</a></li>
                 	</ul>
-            		<form class="navbar-form navbar-left">
-						<input type="text" class="form-control pull-left" placeholder="Search this site..." id="searchInput">
-						<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+            		<form class="navbar-form shrink navbar-left">
+					    <div class="input-group input-group-sm" id="searchInput">
+					      <input type="text" class="form-control" placeholder="Search for...">
+					      <span class="input-group-btn">
+					        <button class="btn btn-default" type="button">Go!</button>
+					      </span>
+					    </div><!-- /input-group -->
 					</form><!-- end navbar-form -->
                     <ul class="nav navbar-nav navbar-right">
-                    	<li><a href="#signupModal" data-toggle="modal">Sign Up</a>
+                    	<li><a class="shrink" href="#signupModal" data-toggle="modal">Sign Up</a>
 
                     	</li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> Guest User <strong class="caret"></strong></a>
+                            <a href="#" class="dropdown-toggle shrink" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> Guest User <strong class="caret"></strong></a>
                             
                             <ul class="dropdown-menu">
                                 <li>
@@ -91,10 +95,10 @@
 		<div class="row">
 			<div class="well">
 				<div class="page-header">
-					<h1>Photo Gallery <small>A section of moments</small></h1>
+					<h1>Gallery <small>A section of moments</small></h1>
 				</div><!-- end page-header -->
 				
-				<p class="lead">Here is some picture moments of activity held in institute for going to section please click on button</p>
+				<p class="lead">Here is some picture and video moments of activity held in institute for going to section please click on button</p>
 				<div class="btn-group btn-group-justified btn-group-xs btn-group-lg">
 					<a href="#Acheivements" class="btn btn-large btn-primary">Acheivements</a>
 					<a href="#Campus" class="btn btn-large btn-primary">Campus</a>
@@ -128,7 +132,7 @@
 					</div>
 				</div><!-- end of inner row-->
 				<div class="btn-group btn-group-justified btn-group-xs">
-					<a href="#" class="btn btn-large btn-primary">Continue</a>
+					<a href="#" class="btn btn-large btn-primary">More on Acheivements</a>
 				</div>
 			</div><!--end of well-->
 		</div><!-- end of row-->
@@ -154,11 +158,11 @@
 						<img class="img-responsive" src="images/Campus/5.jpg" alt="5">
 					</div>
 					<div class="col-md-4 col-lg-4 photo-buck">
-						<img class="img-responsive" src="images/Campus/6.jpg" alt="6">
+						<a href="#video1"  data-toggle="modal"><div class="video-thumbnail"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span><img class="img-responsive" src="images/Campus/6.jpg" alt="6"></div></a>
 					</div>
 				</div><!-- end of inner row-->
 				<div class="btn-group btn-group-justified btn-group-xs">
-					<a href="#" class="btn btn-large btn-primary">Continue</a>
+					<a href="#" class="btn btn-large btn-primary">More on Campus</a>
 				</div>
 			</div><!--end of well-->
 		</div><!-- end of row-->
@@ -188,12 +192,28 @@
 					</div>
 				</div><!-- end of inner row-->
 				<div class="btn-group btn-group-justified btn-group-xs">
-					<a href="#" class="btn btn-large btn-primary">Continue</a>
+					<a href="#" class="btn btn-large btn-primary">More on Sports</a>
 				</div>
 			</div><!--end of well-->
 		</div><!-- end of row-->
 
 	</div><!-- main container end-->
+	<!-- modal things for video-->
+    <!-- Modal HTML -->
+    <div id="video1" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">YouTube Video</h4>
+                </div>
+                <div class="modal-body">
+                    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/YE7VzlLtp-4"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+	<!-- end of modal video-->
 	<footer>
 		<div class="container">
 			<div class="row">
