@@ -1,19 +1,17 @@
-/*
+/*Author: Prashant Farkya*/
 
-My Custom CSS
-=============
-
-Author:  Prashant Farkya
-Updated: July 2016
-Notes:	 Hand coded for Assignment-2
-
-*/
-
-
-
-/* --------------------------------------
-   Layout
-   -------------------------------------- */
+body{
+	margin-top:60px;
+	background:url(../../images/background.jpeg) no-repeat fixed;
+	background-size:100% 100%;
+	color:black;
+	text-shadow:1px 1px 20px white;
+	font-family:sans-serif;
+}
+#main{
+	margin-top:5px;
+}
+/* Layout */
 .video-thumbnail {
     position: relative;
 }
@@ -26,7 +24,6 @@ Notes:	 Hand coded for Assignment-2
     z-index: 999;
     font-size:60px;
 }
-
 .modal-content iframe{
 	margin:0 auto;
 	width:100%;
@@ -56,9 +53,7 @@ Notes:	 Hand coded for Assignment-2
 	margin-bottom:1px;
 }
 
-/* --------------------------------------
-   Typography
-   -------------------------------------- */
+/*Typography */
 #myCarousel .carousel-caption{
 	color:white;
 }
@@ -71,10 +66,7 @@ Notes:	 Hand coded for Assignment-2
 	color:chartreuse;
 }
 
-
-/* --------------------------------------
-   tab-pane
-   -------------------------------------- */
+/*tab-pane */
  .tab-pane h4{
  	font-size:22px;
  	margin-top:0px;
@@ -92,20 +84,14 @@ Notes:	 Hand coded for Assignment-2
 	padding-right:10px;
 }
 
-/* --------------------------------------
-   Carousel
-   -------------------------------------- */
-
-
+/*Carousel */
 .carousel-caption {
 	background-color:rgba(0, 0, 0, 0.5);
 	font-size: 24px;
 }
-
 .carousel-caption h4 {
 	font-size: 32px;
 }
-
 #myCarousel .item { height: 400px; }
 
 #slide1 {
@@ -120,18 +106,7 @@ Notes:	 Hand coded for Assignment-2
 	background: url('../../images/research_carousel_medium.jpg') top center no-repeat;
 }
 
-/* --------------------------------------
-   Global Styles
-   -------------------------------------- */
-body{
-	margin-top:60px;
-	background:url(../../images/background.jpeg) no-repeat fixed;
-	background-size:100% 100%;
-	color:black;
-	text-shadow:1px 1px 20px white;
-	font-family:sans-serif;
-}
-
+/*Global Styles*/
 .page-header{
 	margin-top:10px;
 }
@@ -162,9 +137,8 @@ body{
 .photo-buck img{
 	margin:auto;
 }
-/**************************************************
-Thumbnail Price Tag Styling
-****************************************************/
+
+/*Thumbnail Price Tag Styling*/
 .thumbnails {
 	margin: 20px 0;
 }
@@ -197,9 +171,7 @@ Thumbnail Price Tag Styling
 }
 
 
-/**************************************************
-Footer
-****************************************************/
+/*Footer*/
 footer{
 	background:#f8f8f8;
 	border-top:1px #e7e7e7 solid;
@@ -215,10 +187,6 @@ footer .unstyled li{
    margin-right: 10px;
 }
 
-
-/* --------------------------------------
-   Media Queries
-   -------------------------------------- */
 /*Medium Desktop*/
 @media (max-width:1200px){ 
 	.nav.navbar-nav>li>a{
@@ -233,7 +201,7 @@ footer .unstyled li{
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
 
-	#myCarousel .item { height: 310px; }
+	#myCarousel .item { height: 300px; }
 	
 	#slide1 {
 		background: url('../../images/mathematics_caroursel_small.jpg') top center no-repeat;
